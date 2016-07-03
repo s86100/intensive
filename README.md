@@ -1,2 +1,3 @@
-# intensive
-Abjad week-long intensive curriculum
+# Intensive
+
+Abjad's week-long intensive curriculum.
