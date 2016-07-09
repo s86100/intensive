@@ -82,7 +82,7 @@ class SegmentMaker(object):
             multiplier = Multiplier(time_signature)
             attach(multiplier, multimeasure_rest)
             measures.append(Measure(time_signature, [multimeasure_rest]))
-        if rhythm_maker is None:
+        if rhythm_maker is not None:
             divisions = rhythm_maker(time_signatures, rotation=seed)
             mutate(measures).replace_measure_contents(divisions)
         if pitches is not None:
