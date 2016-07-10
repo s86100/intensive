@@ -1,5 +1,6 @@
     \context Score = "Trio Score" <<
         \context StaffGroup = "Trio Staff Group" <<
+            \tag #'violin
             \context ViolinStaff = "Violin Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Violin }
@@ -102,10 +103,12 @@
                             r8.
                             c'16 [
                             ef'16 ]
+                            \bar "||"
                         }
                     }
                 }
             }
+            \tag #'viola
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
                 \set Staff.instrumentName = \markup { Viola }
@@ -197,10 +200,12 @@
                             c'8
                             ef'16
                             g16 ]
+                            \bar "||"
                         }
                     }
                 }
             }
+            \tag #'cello
             \context CelloStaff = "Cello Staff" {
                 \clef "bass"
                 \set Staff.instrumentName = \markup { Cello }
@@ -264,6 +269,7 @@
                             ef2
                             c2
                             ef2
+                            \bar "||"
                         }
                     }
                 }

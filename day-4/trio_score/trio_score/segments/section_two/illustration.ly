@@ -1,4 +1,4 @@
-% 2016-07-09 16:54
+% 2016-07-09 17:54
 
 \version "2.19.44"
 \language "english"
@@ -14,6 +14,7 @@
 \score {
     \context Score = "Trio Score" <<
         \context StaffGroup = "Trio Staff Group" <<
+            \tag #'violin
             \context ViolinStaff = "Violin Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Violin }
@@ -22,85 +23,163 @@
                     {
                         \time 3/4
                         {
-                            ef''4
-                            c''4
-                            ef''4 ~
+                            ef''16 [
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16 ]
                         }
                     }
                     {
                         \time 4/4
-                        \times 8/9 {
-                            ef''8 [
-                            c''8
-                            ef''8
-                            d''8
-                            af'8
-                            g'8
-                            e''8
-                            cs''8
-                            c''8 ~ ]
+                        {
+                            ef''16 [
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16 ]
                         }
                     }
                     {
                         \time 7/8
                         {
-                            c''2.. ~
+                            ef''16 [
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16 ]
                         }
                     }
                     {
                         \time 4/4
-                        \times 4/5 {
-                            c''4
-                            g'4
-                            ef''4
-                            c''4
-                            ef''4 ~
+                        {
+                            af'16 [
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16 ]
                         }
                     }
                     {
                         \time 3/4
                         {
-                            ef''8 [
-                            c''8
-                            ef''8
-                            d''8
-                            af'8
-                            g'8 ~ ]
+                            c''16 [
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16 ]
                         }
                     }
                     {
                         \time 4/4
-                        \times 2/3 {
-                            g'2
-                            e''2
-                            cs''2 ~
+                        {
+                            c''16 [
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16 ]
                         }
                     }
                     {
                         \time 7/8
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \times 7/6 {
-                            cs''4
-                            c''4
-                            g'4 ~
+                        {
+                            ef''16 [
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16 ]
                         }
                     }
                     {
                         \time 4/4
-                        \times 8/9 {
-                            g'8 [
-                            ef''8
-                            c''8
-                            ef''8
-                            c''8
-                            ef''8
-                            d''8
-                            af'8
-                            g'8 ]
+                        {
+                            ef''16 [
+                            d''16
+                            af'16
+                            g'16
+                            e''16
+                            cs''16
+                            c''16
+                            g'16
+                            ef''16
+                            c''16
+                            ef''16
+                            c''16
+                            ef''16
+                            d''16
+                            af'16
+                            g'16 ]
+                            \bar "||"
                         }
                     }
                 }
             }
+            \tag #'viola
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
                 \set Staff.instrumentName = \markup { Viola }
@@ -183,10 +262,12 @@
                         {
                             af2
                             b2
+                            \bar "||"
                         }
                     }
                 }
             }
+            \tag #'cello
             \context CelloStaff = "Cello Staff" {
                 \clef "bass"
                 \set Staff.instrumentName = \markup { Cello }
@@ -303,6 +384,7 @@
                             ef'8
                             g8. ]
                             r16
+                            \bar "||"
                         }
                     }
                 }

@@ -26,6 +26,7 @@ class SegmentMaker(object):
         cello_pitches=None,
         cello_rhythm_maker=None,
         cello_seed=None,
+        is_last_segment=False,
         ):
         time_signatures = [TimeSignature(_) for _ in time_signatures]
         assert len(time_signatures)
@@ -40,6 +41,7 @@ class SegmentMaker(object):
         self.cello_rhythm_maker = cello_rhythm_maker
         self.cello_seed = cello_seed
         self.score_template = ScoreTemplate()
+        self.is_last_segment = bool(is_last_segment)
 
     def __call__(
         self,
@@ -68,6 +70,10 @@ class SegmentMaker(object):
             self.cello_seed,
             )
         score['Cello Voice'].extend(cello_measures)
+        if self.is_last_segment:
+            score.add_final_bar_line('|.', to_each_voice=True)
+        else:
+            score.add_final_bar_line('||', to_each_voice=True)
         lilypond_file = lilypondfiletools.make_basic_lilypond_file(
             score,
             includes=['../../stylesheets/stylesheet.ily'],

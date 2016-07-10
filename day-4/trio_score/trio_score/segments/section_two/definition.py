@@ -14,7 +14,9 @@ segment_maker = SegmentMaker(
     viola_rhythm_maker=materials.my_slow_rhythm_maker,
     viola_seed=1,
     violin_pitches=materials.my_pitches.retrograde().transpose(12),
-    violin_rhythm_maker=materials.my_slow_rhythm_maker,
+    violin_rhythm_maker=abjad.rhythmmakertools.EvenDivisionRhythmMaker(
+        denominators=[16],
+        ),
     )
 
 

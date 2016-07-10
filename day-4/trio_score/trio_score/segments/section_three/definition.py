@@ -18,6 +18,7 @@ segment_maker = SegmentMaker(
         extra_counts_per_division=[0, 1, 2],
         ),
     violin_seed=-2,
+    is_last_segment=True,
     )
 
 

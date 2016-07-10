@@ -6,7 +6,7 @@ from abjad import StaffGroup
 from abjad import Voice
 from abjad import attach
 from abjad import instrumenttools
-from abjad.indicatortools import LilyPondCommand
+from abjad.tools.indicatortools import LilyPondCommand
 
 
 class ScoreTemplate(object):

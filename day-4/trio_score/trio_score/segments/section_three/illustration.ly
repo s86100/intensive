@@ -1,4 +1,4 @@
-% 2016-07-09 16:54
+% 2016-07-09 17:52
 
 \version "2.19.44"
 \language "english"
@@ -14,6 +14,7 @@
 \score {
     \context Score = "Trio Score" <<
         \context StaffGroup = "Trio Staff Group" <<
+            \tag #'violin
             \context ViolinStaff = "Violin Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Violin }
@@ -137,10 +138,12 @@
                             c'8
                             ef'8
                             d'8 ]
+                            \bar "|."
                         }
                     }
                 }
             }
+            \tag #'viola
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
                 \set Staff.instrumentName = \markup { Viola }
@@ -187,9 +190,11 @@
                         \time 5/4
                         ef1 ~
                         ef4
+                        \bar "|."
                     }
                 }
             }
+            \tag #'cello
             \context CelloStaff = "Cello Staff" {
                 \clef "bass"
                 \set Staff.instrumentName = \markup { Cello }
@@ -318,6 +323,7 @@
                             f8
                             c8. ]
                             r16
+                            \bar "|."
                         }
                     }
                 }
