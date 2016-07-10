@@ -6,6 +6,9 @@
 \include "../../stylesheets/parts.ily"
 
 #(set-default-paper-size "letter" 'portrait)
-#(set-global-staff-size 12)
+#(set-global-staff-size 16)
  
+\paper {
+}
+
 \include "../parts.ily"
