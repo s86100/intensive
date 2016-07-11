@@ -2,7 +2,8 @@ Abjad bootcamp: schedule
 ========================
 
 * Monday: notes, rests & chords
-    * 9 am - 10 am: introduction (who we are play some music) [JJT]
+    * 9 am - 9:30 am: logistical introduction
+    * 9:30 am - 10 am: introduction (who we are play some music) [JJT]
     * 10 am - 10:30 am: LilyPond installation workshop [Josiah+J+T]
         * introducing bash
         * getting to know your text editor
