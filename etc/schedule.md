@@ -46,39 +46,42 @@ Abjad bootcamp: schedule
         * teasers for Wednesday [Trevor]
 
 * Wednesday: reproducing a (beautiful & complex) realworld score
-    * 10:00 - 10:30 am: demo #3: Pärt [Jeff+Josiah]
-    * 10:30 am - noon: engraving complex cello music in LilyPond [Trevor]
+    * 10:00 - noon: Rhythmmakers demo [Josiah]
+      * rhythmmaker demo
+      * make additive rhythmmaker output that demands to be rewritten, which motivates slicing, selection, and mutation as rewriting Meter 
+      * select runs of notes and chords
+      * programmatically add accents
+    * noon-1: lunch
+    * 2-5 pm: engraving complex cello music in LilyPond [Trevor]
         * grobs, contexts, context settings
         * three waves of work for attendees:
-            * first: .ly file with all overrides made in-line to note entry
-            * second: \header and \layout externalized in .ly file
-            * third: \header and \layout externalized to stylesheet.ily
-    * noon - 1 pm: lunch
-    * 1 - 2:30 pm: building complex cello music in Abjad, part 1 [Trevor]
-    * 2:30 - 3 pm: snack I
-    * 3 - 5 pm: building complex cello music in Abjad, part 2 [Trevor]
+            * first (2-4): .ly file with all overrides made in-line to note entry
+            * second (4-4:30): \header and \layout externalized in .ly file
+            * third: (4:30-4:45) \header and \layout externalized to stylesheet.ily
+    
     * 8 - 8:30 pm: evening performance
         * Traiettorie inargentate [Séverine]
 
 * Thursday: Abjad score package structure
-    * 10:00 - 10:30 am: demo #4: Automated Piano Performance Data Notation / MIT Exhibit  [Jeff]
-    * 10:30 am - noon: introducing Abjad score package structure [Josiah]
-        * understanding Abajd score package structure (talk thru directories)
-        * understanding LilyPond stylesheets
-        * understanding relative paths
-    * noon - 1 pm: lunch
-    * 1 - 2:30 pm: reproducing a complete Abjad score package, part 1 [Josiah]
-        * introducing score package commandline tools
-        * import class finished at end of previous class
-        * making segment packages
-        * making material packages
-        * making tools
-        * segment collection
-    * 2:30 - 3 pm: snack I
-    * 3 - 4:30 pm: reproducing a complete Abajd score package, part 2
-        * working in the Abjad composition and document production workflows
-    * 4:30 - 5 pm: snack II
-    * 5 - 6 pm: going further: part extraction [Josiah]
+    * 10:30 am - noon: building complex cello music in Abjad [Trevor] 
+    * noon-1: lunch
+    * 1-6 - introducing Abjad score package structure [Josiah]
+        * 1 intro
+        * 1:10 LilyPond context concatenation
+        * 1:30 cascading LilyPond settings
+        * 1:50 LilyPond part extraction
+        * 2:10 External style sheets
+        * 2:30-2:50 break
+        * 2:50 dissecting a real-world score
+            * 2:50 score repository directory
+            * 3 score package directory
+            * 3:10 materials
+            * 3:20 tools (score template; segment maker)
+            * 3:50 segments
+            * 4 stylesheets
+            * 4:10 the build directory
+            * 4:20 anatomy of a build target
+            * 4:30 putting it all together
 
 * Friday: document structure (publication and more on project layout)
     * 10:00 - 10:30 am: demo #5: MIDI, SuperCollider & friends [Josiah]
